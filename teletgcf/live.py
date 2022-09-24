@@ -19,7 +19,7 @@ async def new_message_handler(event: Union[Message, events.NewMessage]) -> None:
 
     if chat_id not in config.from_to:
         return
-    logging.info(f"New message received in {chat_id}")
+    logging.info(f"Tilak New message received in {chat_id}")
     message = event.message
 
     event_uid = st.EventUid(event)
